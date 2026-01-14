@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal AI Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2>Alice's Assistant</h2>
+                <button class="new-session-button" id="newSessionButton">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    New Chat
+                </button>
+            </div>
+            
+            <div class="sessions-list" id="sessionsList">
+                <!-- Sessions will be dynamically added here -->
+            </div>
+        </div>
+        
+        <!-- Main Chat Area -->
+        <div class="chat-container">
+            <div class="chat-header">
+                <button class="menu-toggle" id="menuToggle">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <h1 id="sessionTitle">New Chat</h1>
+            </div>
+            
+            <div class="chat-messages" id="chatMessages">
+                <div class="welcome-message">
+                    <p>👋 Welcome Alice! How can I assist you today?</p>
+                </div>
+            </div>
+            
+            <div class="chat-input-container">
+                <textarea 
+                    id="messageInput" 
+                    placeholder="Type your message here..." 
+                    rows="1"
+                    maxlength="4000"
+                ></textarea>
+                <button id="sendButton" class="send-button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M7 11L12 6L17 11M12 18V7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

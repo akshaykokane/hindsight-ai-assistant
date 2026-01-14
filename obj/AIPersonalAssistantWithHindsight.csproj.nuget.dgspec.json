@@ -60,6 +60,22 @@
               "target": "Package",
               "version": "[9.0.8, )"
             },
+            "Microsoft.Extensions.AI": {
+              "target": "Package",
+              "version": "[10.2.0, )"
+            },
+            "Microsoft.Extensions.AI.OpenAI": {
+              "target": "Package",
+              "version": "[10.2.0-preview.1.26063.2, )"
+            },
+            "ModelContextProtocol": {
+              "target": "Package",
+              "version": "[0.6.0-preview.1, )"
+            },
+            "ModelContextProtocol.Core": {
+              "target": "Package",
+              "version": "[0.6.0-preview.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[7.2.0, )"
